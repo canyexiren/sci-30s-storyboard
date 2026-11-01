@@ -14,6 +14,8 @@ metadata:
 
 目标：把一段科普文案压成 **30 秒、6 个镜头**的可直接生成的分镜提示词，形态固定为「外国真人主讲 + 文案里的生物拟人化配合解说」。要防的失败是：分镜写成了文案分段，画面描述空洞到 AI 无法生成，或者拟人角色低幼化把硬核科普拍成动画片。
 
+> 本文件自足：`references/` 与 `scripts/` 是可选的深度补充。读不到它们时，按本文件规则直接执行，不要因此中断。
+
 ## Applies when
 
 - 用户给出成段的科普文案（自然 / 生物 / 历史 / 考古 / 科学机制），并要求"分镜""画面提示词""AI 视频脚本"。
@@ -93,7 +95,8 @@ metadata:
 ## Verification
 
 ```bash
-python3 scripts/check_storyboard.py <分镜文件.md>
+python3 scripts/check_storyboard.py <分镜文件.md>     # macOS / Linux
+python  scripts\check_storyboard.py <分镜文件.md>     # Windows
 ```
 
 脚本核对：镜头数、时长合计、时长连续性、单镜时长区间、四要素齐全、台词字数与时长匹配、负面提示词是否存在。输出 PASS/WARN/FAIL，有 FAIL 返回退出码 1。

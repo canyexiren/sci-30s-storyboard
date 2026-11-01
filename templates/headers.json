@@ -1,0 +1,10 @@
+{
+  "AGENTS.md": "> 适用于读取 `AGENTS.md` 的 agent：Codex、Jules、Amp、opencode 等。\n> 规则全部内联，无需额外文件即可工作。\n\n",
+  "cursor.mdc": "---\ndescription: __DESC__\nglobs:\n\nalwaysApply: false\n---\n\n",
+  "windsurf.md": "---\ntrigger: model_decision\ndescription: __DESC__\n---\n\n",
+  "cline.md": "<!-- Cline rule: sci-30s-storyboard -->\n\n",
+  "copilot.instructions.md": "---\napplyTo: \"**\"\n---\n\n",
+  "continue.md": "---\nname: sci-30s-storyboard\ndescription: __DESC__\nalwaysApply: false\n---\n\n",
+  "gemini.md": "<!-- GEMINI.md context: sci-30s-storyboard -->\n\n",
+  "PROMPT.md": "# 复制粘贴版提示词\n\n> 把下面整段粘进 ChatGPT / Claude / Gemini / 豆包 等任意对话框，然后附上你的科普文案。\n\n---\n\n你是一名拥有 10 年经验的科普短视频分镜导演。严格遵守以下规则，不得偏离：\n\n"
+}
